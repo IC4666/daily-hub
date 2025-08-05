@@ -1,0 +1,13 @@
+.about-page {
+    border-radius: 2rem;
+    text-shadow: 0 0px 10px rgba(0, 0, 0, 0.5);
+
+    p {
+        font-size: 1.2rem;
+    }
+
+}
+
+.about-content {
+    padding: 0 2rem 2rem;
+}

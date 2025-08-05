@@ -1,0 +1,14 @@
+<!-- <h3 *ngIf="!todoList().length"> Loading...</h3> -->
+ @if(todoList().length === 0) {
+    <h3>Loading...</h3>
+ }
+
+@for (todo of todoList(); track todo.id) {
+    <glass-effect class="todo-item">
+        <div class="todo-content">
+            <input type="checkbox" [checked]="todo.completed">
+            <p [ngClass]="{'completed': todo.completed}">{{ todo.title }}</p>
+            <!-- <p [ngClass]="{'completed': todo.completed}">Completed: {{ todo.completed }}</p> -->
+        </div>
+    </glass-effect>
+}

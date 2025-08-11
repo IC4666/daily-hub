@@ -1,28 +1,29 @@
-.header{
+.header {
     border-radius: 9999rem;
     padding: 0 2rem;
 }
 
-.header-content {
+.header__content {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-nav {
+nav,
+.nav-links {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 2rem;
-    font-weight: bold;
 }
 
-a{
+a {
     background-color: transparent;
-    color:  #2fdeab; 
+    color: var(--primary-clr);
+    font-weight: bold;
+    padding: 0.5rem 1rem;
     border-radius: 50%;
-       text-decoration: none;
-   
+    text-decoration: none;
+
     &:hover {
         color: white;
     }
@@ -33,7 +34,43 @@ a{
 }
 
 .active-link {
-  color: rgb(255, 255, 255);
-  font-weight: bold;
-  text-shadow: 0 0 5px rgba(0, 255, 0, 1);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    text-shadow: 0 0 5px var(--primary-clr), 0 0 10px var(--primary-clr);
+}
+
+.menu {
+    display: none;
+    color: var(--primary-clr);
+}
+
+@media (max-width: 768px) {
+    .menu {
+        position: absolute;
+        right: 2rem;
+        display: inline-block;
+        color: var(--primary-clr);
+        z-index: 1000;
+        backdrop-filter: blur(5px);
+    }
+
+    nav {
+        position: absolute;
+        z-index: 999;
+        right: -100%;
+        border-radius: 99rem;
+        transition: all 0.5s var(--lazy);
+    }
+
+    nav.expanded {
+        backdrop-filter: blur(5px);
+        inset: 0;
+
+    }
+
+    .nav-links {
+        position: absolute;
+        inset: 0 5rem 0 0;
+        overflow: auto;
+    }
 }

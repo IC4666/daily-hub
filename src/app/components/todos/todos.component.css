@@ -25,10 +25,10 @@ input[type="checkbox"] {
 input[type="checkbox"]:checked {
     background: transparent;
     /* or your custom color */
-    border: 5px #4CAF50 solid;
+    border: 5px var(--primary-clr) solid;
 }
 
 .completed {
     text-decoration: line-through;
-    color: #4CAF50;
+    color: var(--primary-clr);
 }

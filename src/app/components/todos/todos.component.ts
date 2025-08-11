@@ -1,9 +1,9 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TodosService } from '../services/todos.service';
-import { Todo } from '../model/todo.type';
+import { TodosService } from '../../services/todos.service';
+import { Todo } from '../../model/todo.type';
 import { catchError } from 'rxjs';
-import { GlassEffectComponent } from '../components/glass-effect/glass-effect.component';
+import { GlassEffectComponent } from '../glass-effect/glass-effect.component';
 
 @Component({
   selector: 'app-todos',

@@ -11,4 +11,11 @@ import { GlassEffectComponent } from '../glass-effect/glass-effect.component';
 })
 export class HeaderComponent {
  @Input() title = "";
+
+ toggleMenu() {
+    const nav = document.querySelector('nav');
+    if (nav) {
+      nav.classList.toggle('expanded');
+    }
+ }
 }

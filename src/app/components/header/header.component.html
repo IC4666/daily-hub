@@ -4,14 +4,14 @@
 <glass-effect class="header">
   <div class="header__content">
     <h1>{{ title }}</h1>
-    <nav>
-      <div class="nav-links">
+    <nav class="navbar">
+      <div class="navbar__links">
         <a routerLink="/" routerLinkActive="active-link" [routerLinkActiveOptions]="{ exact: true }">Home</a>
         <a routerLink="/about" routerLinkActive="active-link">About</a>
         <a routerLink="/contact" routerLinkActive="active-link">Contact</a>
       </div>
     </nav>
-    <button class="menu" (click)="toggleMenu()">
+    <button class="navbar__menu" (click)="toggleMenu()">
       <span class="material-symbols-outlined">menu</span>
     </button>
   </div>

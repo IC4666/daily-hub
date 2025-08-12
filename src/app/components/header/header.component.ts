@@ -13,9 +13,9 @@ export class HeaderComponent {
  @Input() title = "";
 
  toggleMenu() {
-    const nav = document.querySelector('nav');
+    const nav = document.querySelector('.navbar');
     if (nav) {
-      nav.classList.toggle('expanded');
-    }
+      nav.classList.toggle('navbar-expanded');     
+    }   
  }
 }

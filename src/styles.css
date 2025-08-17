@@ -17,7 +17,7 @@ body {
     padding: 0 1rem;
     font-family: "Poltawski Nowy", serif;
     /* background: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/dece5f124024167.60fb03546918b.gif") no-repeat center/cover fixed; */
-    background-color: gray;
+    background-color: color-mix(in srgb, var(--primary-clr), black 40%);
     color: #ffffff;
     text-shadow: 0 0px 5px rgb(31, 31, 31);
 }
@@ -25,10 +25,8 @@ body {
 .background {
     position: fixed;
     inset: 0;
-    height: 120dvh;
-    width: 120dvw;
     z-index: -9999;
-    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/dece5f124024167.60fb03546918b.gif") no-repeat center/cover fixed;
+    background: url("https://mir-s3-cdn-cf.behance.net/project_modules/fs/dece5f124024167.60fb03546918b.gif") no-repeat center/cover;
     filter: contrast(1.1);
 
 }

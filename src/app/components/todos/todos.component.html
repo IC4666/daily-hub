@@ -1,6 +1,12 @@
 <!-- <h3 *ngIf="!todoList().length"> Loading...</h3> -->
  @if(todoList().length === 0) {
-    <h3>Loading...</h3>
+ 
+
+    <glass-effect class="todo-item">
+        <div class="todo-content">   
+            <h3>Loading...</h3>
+        </div>
+    </glass-effect>
  }
 
 @for (todo of todoList(); track todo.id) {

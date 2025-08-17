@@ -19,7 +19,6 @@ input[type="checkbox"] {
     border-radius: 50%;
     border: 2px solid #fff;
     cursor: pointer;
-
 }
 
 input[type="checkbox"]:checked {

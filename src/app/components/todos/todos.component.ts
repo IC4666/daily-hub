@@ -4,11 +4,13 @@ import { TodosService } from '../../services/todos.service';
 import { Todo } from '../../model/todo.type';
 import { catchError } from 'rxjs';
 import { GlassEffectComponent } from '../glass-effect/glass-effect.component';
+import { StrikethroughDirective } from '../../directives/strikethrough.directive';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule, GlassEffectComponent],
+  imports: [CommonModule, GlassEffectComponent, StrikethroughDirective, FormsModule],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.css'
 })

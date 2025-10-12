@@ -1,5 +1,5 @@
 import { Component, inject, OnInit } from '@angular/core';
-import { TodosComponent } from '../../todos/todos.component';
+import { TodosComponent } from '../../components/todos/todos.component';
 
 @Component({
   selector: 'app-home',

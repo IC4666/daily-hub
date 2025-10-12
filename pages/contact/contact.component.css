@@ -5,23 +5,25 @@
     align-items: center;
     gap: 1rem;
     margin-bottom: 100rem;
-    padding: 0 2rem;
 }
 
-.contact-header {
+.contact-page__header {
     width: 100%;
     margin-bottom: 2rem;
 }
 
-.contact-card {
-    width: 23rem;
+.contact-page__content {
+    width: min(100%, 23rem);
     height: 20rem;
+}
+
+.contact-card {
     padding: 2rem;
     border-radius: 2rem;
 
     h2 {
         text-align: center;
-        margin-bottom: 5rem;
-        color: #2fdeab;
+        margin-bottom: 3rem;
+        color: var(--primary-clr);
     }
 }

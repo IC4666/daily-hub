@@ -1,14 +1,16 @@
 import { Component, inject, OnInit, signal } from '@angular/core';
 import { CommonModule } from '@angular/common';
-import { TodosService } from '../services/todos.service';
-import { Todo } from '../model/todo.type';
+import { TodosService } from '../../services/todos.service';
+import { Todo } from '../../model/todo.type';
 import { catchError } from 'rxjs';
-import { GlassEffectComponent } from '../components/glass-effect/glass-effect.component';
+import { GlassEffectComponent } from '../glass-effect/glass-effect.component';
+import { StrikethroughDirective } from '../../directives/strikethrough.directive';
+import { FormsModule } from '@angular/forms';
 
 @Component({
   selector: 'app-todos',
   standalone: true,
-  imports: [CommonModule, GlassEffectComponent],
+  imports: [CommonModule, GlassEffectComponent, StrikethroughDirective, FormsModule],
   templateUrl: './todos.component.html',
   styleUrl: './todos.component.css'
 })

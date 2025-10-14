@@ -24,10 +24,21 @@ export class TodosComponent implements OnInit {
         console.error('Error fetching todos:', error);
         throw error;
       })
-    ).subscribe((todos)=>{
+    ).subscribe((todos) => {
       this.todoList.set(todos);
     })
     // this.todoList.set(this.getTodos.todoItems);
+  }
+
+  toggleTodo(todoId: any){
+    this.todoList.update( todos =>{
+      return todos.map( todo => {
+        if(todo.id === todoId) {
+          return {...todo, completed: !todo.completed};
+        }
+        else return todo;
+      })
+    })
   }
   
 }

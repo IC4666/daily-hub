@@ -27,7 +27,7 @@ input[type="checkbox"]:checked {
     border: 5px var(--primary-clr) solid;
 }
 
-.completed {
+/* .completed {
     text-decoration: line-through;
     color: var(--primary-clr);
-}
+} */

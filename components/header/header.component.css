@@ -16,24 +16,16 @@
 
 a {
     background-color: transparent;
-    color: var(--primary-clr);
+    color: color-mix(in srgb, var(--primary-clr), white 100%);
     font-weight: bold;
     padding: 0.5rem 1rem;
     text-decoration: none;
-
-    &:hover {
-        color: white;
-    }
-
-    &:active {
-        scale: 0.9;
-    }
 }
 
 .active-link {
-    color: rgb(255, 255, 255);
+    color: var(--primary-clr);
     font-weight: bold;
-    text-shadow: 0 0 5px var(--primary-clr), 0 0 10px var(--primary-clr);
+   font-size: larger;
 }
 
 .navbar__menu {

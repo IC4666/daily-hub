@@ -24,9 +24,10 @@
     content: "";
     position: absolute;
     inset: 0;
+    z-index: -2;
     border-radius: inherit;
     /* background-color: red; */
-    backdrop-filter: url(#liquid-glass-effect);
+    backdrop-filter: url(#liquid-glass-effect) brightness(1.5) blur(1px);
     mask: linear-gradient(0deg, black 10%, transparent 30% 100%);
     -webkit-mask: linear-gradient(0deg, black 10%, transparent 30% 100%);
   }
@@ -36,11 +37,11 @@
   }
 }
 
-.glass-content {
+.glass-blur {
   position: absolute;
   inset: 0;
-  z-index: -2; 
-  backdrop-filter: blur(5px) contrast(1.1) brightness(1.5);
+  z-index: -1; 
+  backdrop-filter: blur(3px);
   border-radius: inherit;
 }
 
